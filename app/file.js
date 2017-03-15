@@ -1,5 +1,4 @@
 const {BrowserWindow, dialog} = require("electron").remote;
-const serialPort = require('serialport');
 
 let subWindow = null;
 
@@ -17,10 +16,11 @@ function openWindow(){
 }
 
 function load(){
-    serialPort.list(function(err, ports){
-        ports.forEach(function(port){
+    var serialport = require('serialport');
+
+    serialport.list((err, ports) => {
+        ports.forEach((port) => {
             console.log(port);
         });
     });
-
 }
