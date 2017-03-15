@@ -1,0 +1,30 @@
+@startuml
+start
+
+repeat
+    if(部屋にいる) then (Yes)
+        :Why?;
+        :Why?;
+        if(不老不死) then (Yes)
+            :Wee!;
+            
+        endif
+    else (No)
+        if (足が速い) then (Yes)
+            if (肉食動物) then (Yes)
+                :チーター;
+            else (そうでない)
+                :ダチョウ;
+            endif
+        else if (外出中) then (true)
+            :Fizz;
+        else
+            :i;
+        endif
+    endif
+    
+
+repeat while (i<100)
+stop
+
+@enduml

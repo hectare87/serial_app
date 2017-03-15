@@ -1,0 +1,20 @@
+header{
+    background: lightgreen;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form{
+    background: lightblue;
+}
+#speed{
+    background: pink;
+}
